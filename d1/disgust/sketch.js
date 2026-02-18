@@ -1,13 +1,19 @@
+let x;
+let y;
+let r,g,b;
 function setup() {
   createCanvas(500,500);
   angleMode(DEGREES);
+ 
 }
 
 function draw() {
-  background(96, 74, 11);
-  fill(68, 92, 76);
+  let bg=lerpColor(color(96, 74, 11), color(70,250,241),frameCount/500);
+  background(bg);
+  let body=lerpColor(color(68, 92, 76), color(166,250,70),frameCount/500);
+  fill(body);
   noStroke();
-  stroke(68, 92, 76);
+  stroke(body);
   strokeWeight(5);
   quad(152,175,332,152,378,500,115,500); //main
   quad(0,0,30,0,90,500,0,500); //left
@@ -25,8 +31,9 @@ function draw() {
   arc(115,345,70,90,300,180); //left2
   arc(382,480,70,90,360,230); //right1
   arc(395,480,70,90,300,180); //right2
-  fill(71, 52, 56);
-  stroke(71, 52, 56);
+  let lob=lerpColor(color(71, 52, 56), color(34, 27, 148),frameCount/500);
+  fill(lob);
+  stroke(lob);
   quad(215,250,230,250,260,500,160,500); //leftlob
   quad(250,260,300,250,360,500,240,500); //rytlob
   ellipse(287,250,90,140); //ryteyecover
@@ -40,8 +47,9 @@ function draw() {
   stroke(0);
   ellipse(280,260,20,20); //eyeballryt
   ellipse(225,250,4,20); //eyeballeft
-  fill(129,133,84);
-  stroke(129, 133, 84);
+  let pimple=lerpColor(color(129,133,84), color(166,250,70),frameCount/500);
+  fill(pimple);
+  stroke(pimple);
   ellipse(55,316,60,60);
   ellipse(375,469,30,30);
   ellipse(280,116,20,20);
@@ -68,7 +76,8 @@ function draw() {
   arc(85,205,50,80,90,180);
   arc(450,220,30,40,300,30);
   arc(440,220,10,90,300,30);
-  stroke(25, 46, 32);
+   let strokes=lerpColor(color(25,46,32), color(231, 255, 184),frameCount/500);
+  stroke(strokes);
   strokeWeight(9);
   arc(180,180,40,90,190,270);
   arc(175,112,30,50,190,270);
@@ -78,11 +87,13 @@ function draw() {
   line(140,348,100,478);
   line(70,378,100,478);
   line(440,348,414,478);
-  stroke(28, 19, 24);
+   let lobstroke=lerpColor(color(28,19,25), color(184, 245, 255),frameCount/500);
+  stroke(lobstroke);
   line(253,315,244,500);
+  line(205,300,170,500);
+  let x=100;
   arc(280,315,55,30,360,170);
   arc(220,290,30,30,360,170);
-  line(205,300,170,500);
   fill(214, 209, 148);
   noStroke();
   ellipse(62,306,20,20);
