@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   let bg=lerpColor(color(96, 74, 11), color(70,250,241),frameCount/500);
   background(bg);
-  let body=lerpColor(color(68, 92, 76), color(166,250,70),frameCount/500);
+  let body=lerpColor(color(68, 92, 76), color(255,235,8),frameCount/500);
   fill(body);
   noStroke();
   stroke(body);
@@ -47,7 +47,7 @@ function draw() {
   stroke(0);
   ellipse(280,260,20,20); //eyeballryt
   ellipse(225,250,4,20); //eyeballeft
-  let pimple=lerpColor(color(129,133,84), color(166,250,70),frameCount/500);
+  let pimple=lerpColor(color(129,133,84), color(255,235,8),frameCount/500);
   fill(pimple);
   stroke(pimple);
   ellipse(55,316,60,60);
