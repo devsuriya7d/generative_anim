@@ -54,51 +54,51 @@ function draw() {
   ellipse(287+frameCount/3, 250+frameCount, 90, 140); //ryteyecover
   ellipse(211-frameCount/3, 250+frameCount, 60, 114); //lefteyecover
   fill(219, 191, 196);
-  ellipse(225, 250, 30, 90); //lefteye
-  ellipse(280, 250, 80, 120); //ryteye
+  ellipse(225-frameCount, 250, 30, 90); //lefteye
+  ellipse(280+frameCount, 250, 80, 120); //ryteye
   fill(112, 88, 92);
-  arc(280, 250, 79, 120, 180, 360); //eyelid
+  arc(280+frameCount, 250, 79, 120, 180, 360); //eyelid
   fill(0);
   stroke(0);
-  ellipse(280, 260, 20, 20); //eyeballryt
-  ellipse(225, 250, 4, 20); //eyeballeft
+  ellipse(280+frameCount, 260, 20, 20); //eyeballryt
+  ellipse(225-frameCount, 250, 4, 20); //eyeballeft
   let pimple = lerpColor(color(129, 133, 84), color(255, 235, 8), frameCount / 500);
   fill(pimple);
   stroke(pimple);
-  ellipse(55, 316, 60, 60);
-  ellipse(375, 469, 30, 30);
-  ellipse(280, 116, 20, 20);
-  ellipse(186, 76, 15, 15);
-  ellipse(260, 296, 5, 5);
-  ellipse(279, 302, 5, 15);
-  ellipse(279, 300, 5, 5);
-  ellipse(300, 295, 5, 5);
-  ellipse(435, 246, 15, 15);
-  ellipse(270, 300, 15, 15);
-  ellipse(290, 299, 15, 15);
-  ellipse(35, 45, 20, 25);
-  quad(35, 45, 39, 45, 52, 120, 44, 120);
+  ellipse(55-frameCount, 316, 60, 60);
+  ellipse(375+frameCount, 469, 30, 30);
+  ellipse(280+frameCount, 116, 20, 20);
+  ellipse(186-frameCount, 76, 15, 15);
+  ellipse(260+frameCount, 296, 5, 5);
+  ellipse(279+frameCount, 302, 5, 15);
+  ellipse(279+frameCount, 300, 5, 5);
+  ellipse(300+frameCount, 295, 5, 5);
+  ellipse(435+frameCount, 246, 15, 15);
+  ellipse(270+frameCount, 300, 15, 15);
+  ellipse(290+frameCount, 299, 15, 15);
+  ellipse(35-frameCount, 45, 20, 25);
+  quad(35-frameCount, 45-frameCount, 39-frameCount, 45-frameCount, 52-frameCount, 120-frameCount, 44-frameCount, 120);
   strokeWeight(1);
-  arc(42, 120, 24, 20, 280, 80);
+  arc(42-frameCount, 120, 24, 20, 280, 80);
   noFill();
   strokeWeight(5);
-  arc(280, 285, 50, 50, 375, 165);
+  arc(280+frameCount, 285, 50, 50, 375, 165);
   stroke(0);
   strokeWeight(2)
-  arc(50, 45, 30, 10, 180, 360);
-  arc(50, 49, 30, 10, 230, 330);
-  arc(70, 207, 30, 10, 230, 330);
-  arc(85, 205, 50, 80, 90, 180);
-  arc(450, 220, 30, 40, 300, 30);
-  arc(440, 220, 10, 90, 300, 30);
+  arc(50-frameCount, 45-frameCount, 30, 10, 180, 360);
+  arc(50-frameCount, 49-frameCount, 30, 10, 230, 330);
+  arc(70-frameCount, 207+frameCount, 30, 10, 230, 330);
+  arc(85-frameCount, 205+frameCount, 50, 80, 90, 180);
+  arc(450+frameCount, 220+frameCount, 30, 40, 300, 30);
+  arc(440+frameCount, 220+frameCount, 10, 90, 300, 30);
   let strokes = lerpColor(color(25, 46, 32), color(231, 255, 184), frameCount / 500);
   stroke(strokes);
   strokeWeight(9);
-  arc(180, 180, 40, 90, 190, 270);
-  arc(175, 112, 30, 50, 190, 270);
-  line(38, 150, 52, 276);
-  line(162, 158, 145, 336);
-  line(340, 278, 355, 396);
+  arc(180-frameCount, 180-frameCount, 40, 90, 190, 270);
+  arc(175-frameCount, 112-frameCount, 30, 50, 190, 270);
+  line(38-frameCount, 150-frameCount, 52-frameCount, 276-frameCount);
+  line(162-frameCount, 158-frameCount, 145-frameCount, 336-frameCount);
+  line(340-frameCount, 278-frameCount, 355-frameCount, 396-frameCount);
   line(140, 348, 100, 478);
   line(70, 378, 100, 478);
   line(440, 348, 414, 478);
